@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/style.js" defer="true"></script>
+</head>
+<body>
+    <article>
+        <div class="center">
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+            <div class="circle_3"></div>
+            <div class="circle_4"></div>
+            <div class="circle_small_1"></div>
+            <div class="circle_small_2"></div>
+            <div class="main">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" height="53px;">
+                </div>
+
+                <div class="form">
+                    <form action="pic-1.html" method="post" target="_blank">
+                        <div class="input_box"><span>手机号：</span><input type="text" ></div>
+                        <div class="input_box"><span>验证码：</span><input type="text"  class="huoqu" id="yz" disabled><span class="orange" id="get_yz">获取验证码</span></div>
+                         <div class="input_box"><span>设置密码：</span><input type="password"  class="short"></div><!-- 以字母开头，长度在6~18之间，只能包含字符、数字和下划线。--> 
+                        <div class="input_box"><span>确认密码：</span><input type="password" class="short"></div>
+                        <div class="input_box">
+                            <select name="sel" id="sel">
+                                <option value="one" selected="selected">个人</option>
+                                <option value="two" >企 业</option>
+                            </select>
+                        </div>
+                        <label for="check"><input type="checkbox" id="check" checked>我已阅读并同意网站用户协议</label>
+                        <!-- <input id="submit" type="submit" value="注册" >  -->
+                        <button id="submit" type="button"> 注册  </button>
+                        <span class="foot"><a href="#">登录账号</a></span>
+                        <span class="foot"><a href="#">忘记密码</a></span>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    
+</body>
+</html>
