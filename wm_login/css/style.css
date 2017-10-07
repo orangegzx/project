@@ -1,0 +1,236 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+/*最外的articlre  */
+article{
+    width: 750px;
+    height: 1280px;
+      background-color: darkkhaki;  
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size:auto 1280px;
+    z-index: 0;
+    /* padding-top: 80px; */
+
+}
+/*放置所有div的中间center  */
+article .center{
+    width: 750px;
+    height: 750px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* z-index: 1; */
+   
+    position: relative;
+    top: 180px;
+
+}
+/*设置虚线的两个圆  */
+article .center .circle_1,.circle_2{
+    width: 720px;
+    height: 720px;
+    border: 3px dotted orange;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+   
+
+}
+/*设置左边虚线圆 位置 */
+article .center .circle_1{
+     left: 0;bottom: 0;
+}
+    /*设置右边虚线圆 位置 */
+article .center .circle_2{
+    right: 0;top: 0;
+}
+
+article .center .circle_3 ,.circle_4{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+}
+/*设置透明度的圆  */
+article .center .circle_3{
+     width: 730px;
+    height: 730px;
+     background-color:  rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+}
+/*设置主要的黑色透明度的圆  */
+article .center .circle_4 {
+     width: 674px;
+    height: 674px;
+     background-color:  rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+     z-index: 0; 
+    
+}
+/*设置两个小圆样式  */
+article .center .circle_small_1,.circle_small_2{
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    
+}
+/*设置两个小圆位置  */
+article .center .circle_small_1{
+    position: absolute;
+    left: 110px;
+    top: 110px;}
+article .center .circle_small_2{
+    position: absolute;
+    right: 110px;
+  bottom: 110px;}
+  /*设置放置logo和表单的容器样式  */
+article .center .main{
+    width:400px;
+    height: 1020px;
+     /* background-color: rgba(225, 225, 0, 0.5);  */
+      padding-top: 54px;  
+     z-index: 2;
+     position: absolute;
+     left: 0;right: 0;
+      margin:  auto;
+}
+    /*设置logo  */
+article .center .main .logo{
+    display: block;
+     width: 160px;
+    height: 54px; 
+}
+/*表单容器  */
+article .center .main  .form{
+    height: 942px;
+    width: 400px;
+    margin-top: 30px;
+     /* background-color: rgba(255, 255, 255, 0.3);  */
+}
+/*input_box 放置input的容器 */
+article .center .main  .form  .input_box{
+    width: 392px;
+    height: 70px;
+    border: 4px solid #ccc;
+    border-radius: 8px;
+    font-size: 28px;
+     color: #ffffff;
+}
+    /*两个input容器之间  */
+article .center .main  .form  .input_box+.input_box{
+    margin-top: 20px;
+}
+/*input 中的span  */
+article .center .main  .form  .input_box span{
+    display: inline-block;
+    margin-left: 8px;
+}
+/* input样式 */
+article .center .main  .form  .input_box input{
+    width: 268px;
+    height: 68px;
+     font-size: 28px; 
+      border: none;
+     background: none; 
+      color: #ffffff;
+    
+}
+/* 第二个input 样式 获取验证码 */ 
+article .center .main  .form  .input_box input:nth-child(2){
+        font-size: 28px;
+        text-align: center;
+        cursor: auto;
+    }
+ /*  */
+article .center .main .form  .input_box .huoqu{
+    width: 160px;
+    height: 68px;
+    font-size: 20px;
+}
+/*获取验证码字体样式  */
+article .center .main .form  .input_box .orange{
+    display: inline-block;
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+}
+/*设置密码 确认密码  */
+article .center .main .form  .input_box .short{
+    width: 240px;
+    height: 68px;
+    font-size: 30px;
+}
+/*selete  下拉菜单 */
+article .center .main .form  .input_box select{
+    width: 394px;
+    height: 68px;
+    font-size: 28px;
+    background:none;
+    border: none ;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url('../images/index_07.png') no-repeat;
+    background-position: 360px 6px;
+     color: #ffffff;
+    /* position: absolute;
+    left: 100px; */
+    /* position: relative; */
+}
+/*下拉菜单选项  */
+article .center .main .form  .input_box select option{
+    /* position: absolute; */
+  background:none;
+    border: none;
+    height: 48px; 
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+     color: #ffffff;
+
+}
+    /*阅读用户协议的label  */
+article .center .main .form label{
+  display: block;
+ position: relative;
+  /* margin-top:160px;
+  margin-left: 30px; */
+  margin:  auto;
+  margin-top: 160px;
+    font-size: 24px;
+    color: #ffffff;    
+    text-align: center;
+    line-height: 32px;
+}
+
+/*注册  */
+article .center .main .form #submit{
+    width: 180px;
+    height: 80px;
+    font-size: 30px;
+    display: block;
+    background-color: orange;
+    border: none;
+    color: #ffffff;
+    /* margin:0 auto; */
+      margin-top: 60px;  
+      margin-left: 110px;
+}
+    /*登录账户 忘记密码  */
+article .center .main .form .foot{
+    display:inline-block;
+    margin-left: 60px;
+    margin-top: 60px;
+
+}
+/* article .center .main .form .foot+.foot{
+    margin-right: 60px;} */
+
+    /*登录账户和密码的链接  */
+article .center .main .form .foot a{
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 28px;
+}
+
+
