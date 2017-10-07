@@ -1,0 +1,14 @@
+extends layout
+block content 
+  body
+    header 
+      h1 music
+    div(class="left")
+      ul(id="list")
+        //- 5 遍历后台传过来的music
+        each item in music
+          li(title=item)=item
+        
+    div(class="right")
+   
+  

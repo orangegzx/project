@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  body
+    header 
+      h1 music
+
+      ul(class="type" id="type")
+        li(data-type="dot") Dot
+        li(class="btn" data-type="col") Column
+
+      p
+        volumen
+          input(id="vol" type="range" min="0" max="100" value="40")
+
+    div(class="left")
+      ul(id="list")
+        each item in music
+          li(title=item)=item
+        
+    div(class="right" id="box")
+   
+  
