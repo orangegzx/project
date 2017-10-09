@@ -1,0 +1,174 @@
+body {
+   padding: 20px; 
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+   color: #00B7FF; 
+   text-decoration: none;
+}
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+body{
+  background:url('../images/theme/bg.png') no-repeat;
+  background-size: cover;
+  background-attachment:fixed
+}
+/*放置所有容器 的div */
+article.content{
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px  solid #ccc;
+}
+/*头部  */
+header.header{
+     width: 1200px;  
+     height: 90px; 
+     margin-top: 10px; 
+    background-color: darkgoldenrod;
+   background: url('../images/theme/top.png') no-repeat;
+   background-size: auto 100%;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  /*头部的logo  */
+header.header .logo{
+  width: 240px;
+  float: left;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+header.header .logo img{
+  height: 60px;
+}
+/*头部的sign 欢迎语  */
+header.header .sign{
+   width: 270px; 
+  height: 40px;
+  line-height: 34px;
+  background: url('../images/theme/sign.png') no-repeat;  
+  background-size: auto 40px;
+}
+/*头部最右边的关于与桌面 换肤  */
+header.header .about{
+  /* width: 200px; */
+  height: 70px;
+  /* border: 1px solid #ccc; */
+  float: right;
+  position: absolute;
+  right: 40px;
+   top: 5px; 
+  overflow: hidden;
+}
+header.header .about ul{
+  padding: 0;
+  height: 70px;
+}
+header.header .about ul li{
+  list-style: none;
+  width:60px; 
+  height:70px;
+  display: inline-block;
+  background-color: #ccc;
+  text-align: center;
+  padding-top: 48px;
+}
+/*头部的换肤等图标的位置  */
+header.header .about ul li.desk{
+  background: url('../images/icon/desktopicon.png') no-repeat;
+  background-position: 4px 0;/*左边 上边*/
+}
+header.header .about ul li.skin{
+  background: url('../images/icon/desktopicon.png') no-repeat;
+  background-position: -120px 0;
+}
+header.header .about ul li.us{
+  background: url('../images/icon/desktopicon.png') no-repeat;
+  background-position: -180px 0 ;
+}
+/*放置内容的容器  */
+article.main{
+ width: 1200px;
+ height: 700px;
+ margin-top: 10px;
+}
+/*容器中的左边  */
+article.main .navleft{
+  width: 240px;
+  height: 450px;
+  background-color: rgb(46 , 139, 47, 0.8);
+  float: left;
+  border-radius: 10px;
+  margin: 10px;
+}
+/*第一层的ul  */
+article.main .navleft ul.navul{
+  padding: 0;
+  margin: 10px;  
+}
+/*第一层ul的li  */
+article.main .navleft ul.navul li{
+  list-style: none;
+}
+  /*第一层ul的li的a标签  */
+article.main .navleft ul li.navli>a{
+  display: block;
+   height: 50px;
+   line-height: 50px;
+  width: 210px;
+  background: url('../images/theme/list_btn_li.png') no-repeat ;
+  background-size: cover;
+  color: #000;
+  font-size: 18px ;
+  font-weight: bolder;
+   position: relative;
+
+}
+ /*第一层ul的li的a标签的图片  */
+article.main .navleft ul.navul li img{
+    display: inline-block;  
+    margin-left: 30px;
+    margin-right: 10px;
+} 
+  /*第二层ul 隐藏的li ul  */
+article.main .navleft ul.navul li ul.ulinul{
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  display: none;
+}
+/*第二层ul 的li  */
+article.main .navleft ul.navul li ul.ulinul li{ 
+  margin: 0 auto !important;
+}
+/*第二层ul的li里的a  */
+article.main .navleft ul.navul li ul.ulinul a{
+  display: block; 
+  height:40px;
+  width: 180px;
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+  background: url('../images/zy/hover.png') no-repeat ;
+  background-size: cover;
+}
+/*a标签 =悬浮样式  */
+article.main .navleft ul.navul li ul.ulinul a:hover{
+  background: url('../images/theme/list_ui_li_act.png') no-repeat ;
+   background-size: cover;
+   color: #fff;
+}
+
+/*容器右边显示后台数据  */
+article.main .contentright{
+  width: 920px;
+  height: 600px;
+  margin: 10px;
+  background-color: rgb(46 , 139, 47, 0.8);
+  float: right;
+  border-radius: 10px;
+}

@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    body
+        article(class="content")
+            header(class="header")
+                div(class="logo")
+                    img(src="../images/theme/tk_logo.png")
+                div(class="sign")
+                    span 你好， 管理员
+                    a(href="#") 退出    
+                div(class="about")
+                    ul
+                        li(class="desk") 桌面
+                        li(class="skin") 换肤
+                        li(class="us") 关于
+
+            article(class="main")
+                section(class="navleft")
+                    ul(class="navul")
+                        li(class="navli") 
+                            a(href="javascript:;")
+                                img(src="../images/icon/icon_basic.png")
+                                span 题库
+                            ul(class="ulinul default")
+                                li(page="/bankAll")
+                                    a(href="#") 全部题目
+                                li(page="/bankTopic") 
+                                    a(href="#") 题目管理
+
+                        li(class="navli") 
+                            a(href="javascript:;")
+                                img(src="../images/icon/icon_personnel.png")
+                                span 试题管理
+                            ul(class="ulinul")
+                                li(page="/paperList") 
+                                    a(href="#") 试卷列表
+                                li(page="/paperHand")  
+                                    a(href="#") 手工组卷
+                            
+                        li(class="navli") 
+                            a(href="javascript:;")
+                                img(src="../images/icon/icon_educational.png")
+                                span 考试管理
+                            ul(class="ulinul")
+                                li(page="/testList")  
+                                    a(href="#") 考试列表
+                                li(page="/testArrangement")  
+                                    a(href="#") 考试安排
+
+                section(class="contentright")

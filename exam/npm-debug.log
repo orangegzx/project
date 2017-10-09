@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'G:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'G:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'start' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle application-name@0.0.1~prestart: application-name@0.0.1
+6 silly lifecycle application-name@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle application-name@0.0.1~start: application-name@0.0.1
+8 verbose lifecycle application-name@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle application-name@0.0.1~start: PATH: G:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;G:\MyLearning\express\exam\node_modules\.bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\jdk1.7.0_75\bin;C:\Program Files (x86)\Java\jdk1.8.0_111\bin;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\Common Files\Autodesk Shared\;C:\Program Files\Common Files\Autodesk Shared\;C:\Users\gzx\AppData\Local\Programs\Python\Python36;G:\putty\;C:\Users\gzx\AppData\Roaming\npm;G:\Console2;G:\Program Files\nodejs;C:\Users\gzx\AppData\Roaming\npm;G:\Program Files\nodejs\node_modules;C:\Users\gzx\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\gzx\AppData\Local\Programs\Python\Python36\;C:\Users\gzx\AppData\Local\Microsoft\WindowsApps;G:\Program Files\Microsoft VS Code\bin;G:\Program Files\Node Js;G:\Console2;C:\Users\gzx\AppData\Roaming\npm;G:\Program Files\nodejs;G:\Program Files\nodejs\node_modules;C:\Users\gzx\AppData\Roaming\npm
+10 verbose lifecycle application-name@0.0.1~start: CWD: G:\MyLearning\express\exam
+11 silly lifecycle application-name@0.0.1~start: Args: [ '/d /s /c', 'node app.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1028:11)
+12 verbose stack     at process.kill (internal/process.js:173:13)
+12 verbose stack     at process.listener (G:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:95:15)
+12 verbose stack     at emitNone (events.js:86:13)
+12 verbose stack     at process.emit (events.js:186:7)
+12 verbose stack     at processEmit (G:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:155:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:200:44)
+13 verbose cwd G:\MyLearning\express\exam
+14 error Windows_NT 10.0.14393
+15 error argv "G:\\Program Files\\nodejs\\node.exe" "G:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "start"
+16 error node v7.6.0
+17 error npm  v4.1.2
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
